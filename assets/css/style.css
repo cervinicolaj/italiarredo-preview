@@ -93,13 +93,13 @@ body.has-hero .nav:not(.scrolled) .burger span{background:#fff}
 .hero-bg{position:absolute;inset:0;z-index:0}
 .hero-bg img{width:100%;height:100%;object-fit:cover}
 .hero-bg::after{content:"";position:absolute;inset:0;
- background:linear-gradient(180deg,rgba(20,16,12,.45) 0%,rgba(20,16,12,.15) 35%,rgba(20,16,12,.72) 100%)}
+ background:linear-gradient(180deg,rgba(20,16,12,.45) 0%,rgba(20,16,12,.18) 30%,rgba(20,16,12,.55) 62%,rgba(20,16,12,.82) 100%)}
 .hero-inner{position:relative;z-index:1;max-width:var(--maxw);margin:0 auto;width:100%;
- padding:0 clamp(1.2rem,4vw,2.4rem) clamp(3.5rem,7vw,6rem)}
+ padding:0 clamp(1.2rem,4vw,2.4rem) clamp(6rem,16vh,11rem)}
 .hero h1{font-size:clamp(2.6rem,6vw,5rem);font-weight:500;max-width:16ch;
  text-shadow:0 2px 30px rgba(0,0,0,.25)}
 .hero .hero-sub{font-size:clamp(1.05rem,1.8vw,1.3rem);max-width:46ch;margin:1.4rem 0 2.2rem;
- color:rgba(255,255,255,.92)}
+ color:rgba(255,255,255,.95);text-shadow:0 1px 18px rgba(0,0,0,.45)}
 .hero-eyebrow{color:rgba(255,255,255,.85)}
 
 /* intro / values */
@@ -421,5 +421,5 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
  .hero-eyebrow{display:none}
  .hero-sub{display:none}
  .hero h1{font-size:clamp(2.4rem,11vw,3.2rem)}
- .hero-inner{padding-bottom:clamp(4rem,10vh,6rem)}
+ .hero-inner{padding-bottom:clamp(5rem,14vh,8rem)}
 }
