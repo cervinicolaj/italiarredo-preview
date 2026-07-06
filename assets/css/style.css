@@ -88,7 +88,7 @@ body.has-hero .nav:not(.scrolled) .nav-cta:hover{background:#fff;color:var(--esp
 body.has-hero .nav:not(.scrolled) .burger span{background:#fff}
 
 /* hero */
-.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;
+.hero{position:relative;min-height:100vh;min-height:100dvh;display:flex;align-items:flex-end;
  color:#fff;overflow:hidden}
 .hero-bg{position:absolute;inset:0;z-index:0}
 .hero-bg img{width:100%;height:100%;object-fit:cover}
@@ -415,3 +415,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 
 /* visually hidden but readable by search engines / screen readers */
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* mobile: hero essenziale — solo titolo e bottoni */
+@media (max-width:680px){
+ .hero-eyebrow{display:none}
+ .hero-sub{display:none}
+ .hero h1{font-size:clamp(2.4rem,11vw,3.2rem)}
+ .hero-inner{padding-bottom:clamp(4rem,10vh,6rem)}
+}
