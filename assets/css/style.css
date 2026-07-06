@@ -430,3 +430,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .fabout p{color:var(--ink-soft);margin:0 0 1em}
 .fabout-salons strong{color:var(--ink);font-weight:500}
 .fabout-link{margin-top:1.4rem}
+
+/* about collage (v5.5) */
+.about-collage{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-content:start}
+.about-collage img{width:100%;height:100%;object-fit:cover;border-radius:2px}
+.about-collage .ac-wide{grid-column:1/-1;aspect-ratio:16/9}
+.about-collage img:not(.ac-wide){aspect-ratio:3/4}
