@@ -1,0 +1,220 @@
+{
+ "factories": [
+  {
+   "slug": "longhi",
+   "name": "Longhi",
+   "cat": "Мебель / Luxury",
+   "tag": "Роскошная мебель из Милана",
+   "desc": "Роскошная мебель из Милана: диваны, кровати, столы и системы хранения. Фирменные сочетания алюминия, стекла и мрамора, коллекции Love Luxe и Blooming, а также линия outdoor.",
+   "logo": "assets/logos/longhi.svg",
+   "hero": "assets/img/longhi/hero.jpg",
+   "card": "assets/img/longhi/card.jpg",
+   "gallery": [
+    "assets/img/longhi/g01.jpg",
+    "assets/img/longhi/g02.jpg",
+    "assets/img/longhi/g03.jpg",
+    "assets/img/longhi/g04.jpg",
+    "assets/img/longhi/g05.jpg",
+    "assets/img/longhi/g06.jpg",
+    "assets/img/longhi/g07.jpg",
+    "assets/img/longhi/g08.jpg"
+   ],
+   "catalog": "assets/catalogs/longhi.pdf"
+  },
+  {
+   "slug": "turatit4",
+   "name": "TuratiT4",
+   "cat": "Мягкая мебель",
+   "tag": "Мягкая мебель из Брианцы",
+   "desc": "Мягкая мебель из Брианцы (с 1960-х годов): диваны и кровати с индивидуальной конфигурацией. Семейное производство, итальянское качество и внимание к каждой детали.",
+   "logo": "assets/logos/turatit4.svg",
+   "hero": "assets/img/turatit4/hero.jpg",
+   "card": "assets/img/turatit4/card.jpg",
+   "gallery": [
+    "assets/img/turatit4/g01.jpg",
+    "assets/img/turatit4/g02.jpg",
+    "assets/img/turatit4/g03.jpg",
+    "assets/img/turatit4/g04.jpg",
+    "assets/img/turatit4/g05.jpg",
+    "assets/img/turatit4/g06.jpg",
+    "assets/img/turatit4/g07.jpg",
+    "assets/img/turatit4/g08.jpg"
+   ],
+   "catalog": null
+  },
+  {
+   "slug": "artnova",
+   "name": "Art Nova",
+   "cat": "Мягкая мебель",
+   "tag": "Диваны, кресла и кровати с 1976 года",
+   "desc": "Итальянская фабрика мягкой мебели (с 1976 года): диваны, кресла, кровати и журнальные столики. Сочетание ремесленных традиций и современных технологий, индивидуальный подбор тканей и отделок.",
+   "logo": "assets/logos/artnova.png",
+   "hero": "assets/img/artnova/hero.jpg",
+   "card": "assets/img/artnova/card.jpg",
+   "gallery": [
+    "assets/img/artnova/g01.jpg",
+    "assets/img/artnova/g02.jpg",
+    "assets/img/artnova/g03.jpg",
+    "assets/img/artnova/g04.jpg",
+    "assets/img/artnova/g05.jpg",
+    "assets/img/artnova/g06.jpg"
+   ],
+   "catalog": "assets/catalogs/artnova.pdf"
+  },
+  {
+   "slug": "veneran",
+   "name": "Veneran",
+   "cat": "Шкафы и гардеробные",
+   "tag": "Шкафы, гардеробные и спальни",
+   "desc": "Итальянский бренд шкафов, гардеробных комнат и кроватей (с 1960-х годов). Модульные системы хранения и мебель для спальни и гостиной — полный цикл производства Made in Italy.",
+   "logo": "assets/logos/veneran.png",
+   "hero": "assets/img/veneran/hero.jpg",
+   "card": "assets/img/veneran/card.jpg",
+   "gallery": [
+    "assets/img/veneran/g01.jpg",
+    "assets/img/veneran/g02.jpg",
+    "assets/img/veneran/g03.jpg",
+    "assets/img/veneran/g04.jpg",
+    "assets/img/veneran/g05.jpg",
+    "assets/img/veneran/g06.jpg",
+    "assets/img/veneran/g07.jpg",
+    "assets/img/veneran/g08.jpg"
+   ],
+   "catalog": null
+  },
+  {
+   "slug": "arthesi",
+   "name": "Arthesi",
+   "cat": "Мебель для ванной / Интерьеры",
+   "tag": "Мебель для ванной и авторские интерьеры",
+   "desc": "Arthesi — итальянский бренд мебели для ванной комнаты и авторских интерьерных проектов. Современные и классические коллекции, выполненные на заказ с безупречным качеством отделки.",
+   "logo": null,
+   "hero": "assets/img/arthesi/hero.jpg",
+   "card": "assets/img/arthesi/card.jpg",
+   "gallery": [
+    "assets/img/arthesi/g01.jpg",
+    "assets/img/arthesi/g02.jpg",
+    "assets/img/arthesi/g03.jpg",
+    "assets/img/arthesi/g04.jpg",
+    "assets/img/arthesi/g05.jpg",
+    "assets/img/arthesi/g06.jpg",
+    "assets/img/arthesi/g07.jpg"
+   ],
+   "catalog": "assets/catalogs/arthesi.pdf"
+  },
+  {
+   "slug": "asnaghi",
+   "name": "Asnaghi Interiors",
+   "cat": "Классическая мебель",
+   "tag": "Роскошь в классическом стиле",
+   "desc": "Роскошная мебель в классическом и современном стиле. Ручная работа итальянских мастеров, ценные породы дерева и изысканная отделка. Коллекции Classic, Contemporary и Diamonds.",
+   "logo": null,
+   "hero": "assets/img/asnaghi/hero.jpg",
+   "card": "assets/img/asnaghi/card.jpg",
+   "gallery": [
+    "assets/img/asnaghi/g01.jpg",
+    "assets/img/asnaghi/g02.jpg",
+    "assets/img/asnaghi/g03.jpg",
+    "assets/img/asnaghi/g04.jpg",
+    "assets/img/asnaghi/g05.jpg",
+    "assets/img/asnaghi/g06.jpg"
+   ],
+   "catalog": "assets/catalogs/asnaghi.pdf"
+  },
+  {
+   "slug": "casa-international",
+   "name": "Casa International",
+   "cat": "Дизайнерская мебель",
+   "tag": "Современный дизайн из Меды",
+   "desc": "Современная дизайнерская мебель из Меды. Авторские коллекции, в том числе Mare Nostrum: средиземноморское вдохновение, ценные материалы и безупречный итальянский дизайн для всего дома.",
+   "logo": "assets/logos/casa-international.jpeg",
+   "hero": "assets/img/casa-international/hero.jpg",
+   "card": "assets/img/casa-international/card.jpg",
+   "gallery": [
+    "assets/img/casa-international/g01.jpg",
+    "assets/img/casa-international/g02.jpg",
+    "assets/img/casa-international/g03.jpg",
+    "assets/img/casa-international/g04.jpg",
+    "assets/img/casa-international/g05.jpg"
+   ],
+   "catalog": "assets/catalogs/casa-international.pdf"
+  },
+  {
+   "slug": "matteo-gennari",
+   "name": "Matteo Gennari",
+   "cat": "Кухни / Интерьеры",
+   "tag": "Эксклюзивные кухни и интерьеры люкс",
+   "desc": "Эксклюзивные кухни и цельные интерьерные пространства класса люкс. Натуральный камень, ценные породы дерева и сталь, безупречная ручная работа из Пармы.",
+   "logo": "assets/logos/matteo-gennari.png",
+   "hero": "assets/img/matteo-gennari/hero.jpg",
+   "card": "assets/img/matteo-gennari/card.jpg",
+   "gallery": [
+    "assets/img/matteo-gennari/g01.jpg",
+    "assets/img/matteo-gennari/g02.jpg",
+    "assets/img/matteo-gennari/g03.jpg",
+    "assets/img/matteo-gennari/g04.jpg"
+   ],
+   "catalog": "assets/catalogs/matteo-gennari.pdf"
+  },
+  {
+   "slug": "mechini",
+   "name": "Mechini",
+   "cat": "Освещение",
+   "tag": "Художественные люстры из Флоренции",
+   "desc": "Художественные люстры ручной работы из Флоренции (с 1970 года). Классические и современные коллекции, кованый металл, муранское стекло и богемский хрусталь, индивидуальные размеры и цвета.",
+   "logo": "assets/logos/mechini.png",
+   "hero": "assets/img/mechini/hero.jpg",
+   "card": "assets/img/mechini/card.jpg",
+   "gallery": [
+    "assets/img/mechini/g01.jpg",
+    "assets/img/mechini/g02.jpg",
+    "assets/img/mechini/g03.jpg",
+    "assets/img/mechini/g04.jpg",
+    "assets/img/mechini/g05.jpg",
+    "assets/img/mechini/g06.jpg",
+    "assets/img/mechini/g07.jpg",
+    "assets/img/mechini/g08.jpg"
+   ],
+   "catalog": null
+  },
+  {
+   "slug": "officina-luce",
+   "name": "Officina Luce",
+   "cat": "Освещение",
+   "tag": "Декоративный свет из Тосканы",
+   "desc": "Декоративный свет из Тосканы: люстры, торшеры, бра и настольные лампы. Латунь, художественное стекло и мрамор — сочетание современной эстетики и традиционного мастерства.",
+   "logo": "assets/logos/officina-luce.png",
+   "hero": "assets/img/officina-luce/hero.jpg",
+   "card": "assets/img/officina-luce/card.jpg",
+   "gallery": [
+    "assets/img/officina-luce/g01.jpg",
+    "assets/img/officina-luce/g02.jpg",
+    "assets/img/officina-luce/g03.jpg",
+    "assets/img/officina-luce/g04.jpg",
+    "assets/img/officina-luce/g05.jpg",
+    "assets/img/officina-luce/g06.jpg",
+    "assets/img/officina-luce/g07.jpg"
+   ],
+   "catalog": null
+  },
+  {
+   "slug": "gruppo-raina",
+   "name": "Gruppo Raina",
+   "cat": "Освещение",
+   "tag": "Светильники Made in Italy",
+   "desc": "Итальянский производитель освещения (бренды Ideallux, Lookup, Colombo). Декоративные и технические светильники, светодиодные технологии, 100% Made in Italy для жилых и общественных пространств.",
+   "logo": "assets/logos/gruppo-raina.svg",
+   "hero": null,
+   "card": null,
+   "gallery": [],
+   "catalog": null
+  }
+ ],
+ "site_images": {
+  "home_hero": "assets/img/_site/home_hero.jpg",
+  "about": "assets/img/_site/about.jpg",
+  "salone": "assets/img/_site/salone.jpg"
+ },
+ "brand_logo_dark": "assets/logos/italiarredo_dark.png",
+ "brand_logo_white": "assets/logos/italiarredo_white.png"
+}
