@@ -331,6 +331,15 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
  .nav-links a{color:var(--ink) !important;font-size:1.3rem;padding:.85rem 0;width:100%}
  .nav-links a::after{display:none}
  .nav-links a.active{color:var(--accent-2) !important}
+ /* Связаться nel drawer: vero tasto, centrato, leggibile in ogni pagina/tema.
+    Le regole has-hero (testo/bordo bianchi) qui vengono sovrascritte. */
+ .nav-links .nav-cta,
+ body.has-hero .nav:not(.scrolled) .nav-links .nav-cta{
+   display:block;width:100%;text-align:center;margin-top:1.4rem;
+   padding:1em 0 !important;border-radius:2px;
+   background:#e9dcc0;border:1px solid var(--accent);
+   color:#2a221a !important;font-weight:500}
+ .nav-links .nav-cta:hover{background:var(--accent);color:#fff !important}
  body.has-hero .nav:not(.scrolled) .nav-links a{color:var(--ink) !important}
  .nav-links .nav-cta{margin-top:.6rem;padding:.7em 1.4em !important}
  .burger{display:flex;z-index:130}
