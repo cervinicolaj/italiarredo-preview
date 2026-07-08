@@ -95,7 +95,10 @@ body.has-hero .nav:not(.scrolled) .burger span{background:#fff}
 .hero-bg::after{content:"";position:absolute;inset:0;
  background:linear-gradient(180deg,rgba(20,16,12,.66) 0%,rgba(20,16,12,.45) 55%,rgba(20,16,12,.55) 100%)}
 .hero-inner{position:relative;z-index:1;max-width:var(--maxw);margin:0 auto;width:100%;
- padding:clamp(8rem,18vh,11rem) clamp(1.2rem,4vw,2.4rem) 3rem}
+ display:flex;flex-direction:column;align-self:stretch;
+ padding:clamp(8rem,18vh,11rem) clamp(1.2rem,4vw,2.4rem) clamp(3rem,7vh,5rem)}
+/* titolo in alto, bottoni spinti al fondo dell'hero */
+.hero .btn-row{margin-top:auto}
 .hero h1{font-size:clamp(2.6rem,6vw,5rem);font-weight:500;max-width:16ch;
  text-shadow:0 2px 30px rgba(0,0,0,.25)}
 .hero .hero-sub{font-size:clamp(1.05rem,1.8vw,1.3rem);max-width:46ch;margin:1.4rem 0 2.2rem;
