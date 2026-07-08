@@ -338,11 +338,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
     Le regole has-hero (testo/bordo bianchi) qui vengono sovrascritte. */
  .nav-links .nav-cta,
  body.has-hero .nav:not(.scrolled) .nav-links .nav-cta{
-   display:block;width:100%;text-align:center;margin-top:1.4rem;
-   padding:1em 0 !important;border-radius:2px;
-   background:#e9dcc0;border:1px solid var(--accent);
-   color:#2a221a !important;font-weight:500}
- .nav-links .nav-cta:hover{background:var(--accent);color:#fff !important}
+   display:inline-block;width:auto;text-align:center;margin-top:1.4rem;
+   padding:.75em 1.6em !important;border-radius:1px;
+   background:var(--btn-bg);border:1px solid var(--btn-bg);
+   color:var(--btn-ink) !important;font-size:1rem;font-weight:500}
+ .nav-links .nav-cta:hover{background:var(--btn-bg-hover);border-color:var(--btn-bg-hover)}
  body.has-hero .nav:not(.scrolled) .nav-links a{color:var(--ink) !important}
  .nav-links .nav-cta{margin-top:.6rem;padding:.7em 1.4em !important}
  .burger{display:flex;z-index:130}
@@ -470,7 +470,8 @@ a,button,input,textarea,label{touch-action:manipulation}
 /* burger: target 44px pieno */
 .burger{width:48px;height:48px}
 /* footer: link tappabili comodi */
-.f-nav a,.f-social a{padding:.25em 0;display:inline-block}
+.f-nav a{display:block;padding:.3em 0}
+.f-social a{display:inline-block;padding:.25em .6em .25em 0}
 /* modale: lo scroll non "buca" la pagina dietro */
 .modal{overscroll-behavior:contain}
 /* footer heading declassato da h4 a p: mantiene lo stile */
@@ -478,3 +479,8 @@ a,button,input,textarea,label{touch-action:manipulation}
 /* skip link: invisibile finché non riceve focus da tastiera */
 .skip-link{position:absolute;left:-9999px;top:0;z-index:2000;background:var(--espresso);color:#f5efe6;padding:.7em 1.2em;border-radius:2px}
 .skip-link:focus{left:12px;top:12px}
+
+/* poster Salone: su schermi stretti il crop centrato tagliava le date */
+@media (max-width:680px){
+ .band-img img{object-position:32% center}
+}
