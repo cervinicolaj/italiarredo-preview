@@ -323,15 +323,24 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
  .footer-grid{grid-template-columns:1fr 1fr}
  .fside{position:static}
  .nav-links{position:fixed;inset:0 0 0 auto;width:78%;max-width:320px;background:var(--bg);
-   flex-direction:column;align-items:flex-start;justify-content:center;gap:1.4rem;
+   flex-direction:column;align-items:flex-start;justify-content:center;gap:0;
    padding:2rem;transform:translateX(105%);transition:transform .5s var(--ease),visibility 0s .5s;
    box-shadow:-20px 0 60px rgba(20,16,12,.18);z-index:120;visibility:hidden}
  .nav-links.open{transform:none;visibility:visible;transition:transform .5s var(--ease)}
- .nav-links a{color:var(--ink) !important;font-size:1.15rem;padding:.35rem 0}
+ /* ritmo uniforme: niente gap, ogni voce ha lo stesso respiro */
+ .nav-links a{color:var(--ink) !important;font-size:1.3rem;padding:.85rem 0;width:100%}
+ .nav-links a::after{display:none}
+ .nav-links a.active{color:var(--accent-2) !important}
  body.has-hero .nav:not(.scrolled) .nav-links a{color:var(--ink) !important}
  .nav-links .nav-cta{margin-top:.6rem;padding:.7em 1.4em !important}
  .burger{display:flex;z-index:130}
  body.menu-open{overflow:hidden}
+ /* burger -> X scura quando il menu e aperto */
+ .burger span{transition:transform .3s var(--ease),opacity .25s,background-color .3s}
+ body.menu-open .burger span{background:var(--ink) !important}
+ body.menu-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+ body.menu-open .burger span:nth-child(2){opacity:0}
+ body.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 }
 @media (max-width:680px){
  body{font-size:16px}
