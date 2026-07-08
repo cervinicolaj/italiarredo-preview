@@ -41,7 +41,7 @@ p{margin:0 0 1em;text-wrap:pretty}
 /* buttons */
 .btn{display:inline-flex;align-items:center;gap:.5em;font-family:Inter;font-weight:500;
  font-size:.95rem;letter-spacing:.01em;padding:.95em 1.8em;border:1px solid var(--espresso);
- background:var(--espresso);color:#f5efe6;cursor:pointer;transition:all .4s var(--ease);border-radius:1px}
+ background:var(--espresso);color:#f5efe6;cursor:pointer;transition:background-color .4s var(--ease),border-color .4s var(--ease),color .4s var(--ease),transform .2s var(--ease);border-radius:1px}
 .btn:hover{background:var(--accent-2);border-color:var(--accent-2);color:#fff}
 .btn-accent{background:var(--btn-bg);border-color:var(--btn-bg);color:var(--btn-ink)}
 .btn-accent:hover{background:var(--btn-bg-hover);border-color:var(--btn-bg-hover);color:var(--btn-ink)}
@@ -57,7 +57,7 @@ p{margin:0 0 1em;text-wrap:pretty}
 /* header */
 .nav{position:fixed;top:0;left:0;right:0;z-index:var(--z-header);
  background:var(--nav-bg);backdrop-filter:saturate(140%) blur(10px);
- border-bottom:1px solid var(--line);transition:all .45s var(--ease)}
+ border-bottom:1px solid var(--line);transition:background-color .45s var(--ease),border-color .45s var(--ease),backdrop-filter .45s var(--ease)}
 .nav-inner{max-width:1320px;margin:0 auto;padding:.85rem clamp(1.2rem,4vw,2.4rem);
  display:flex;align-items:center;justify-content:space-between;gap:2rem}
 .brand{display:flex;align-items:center;flex-shrink:0}
@@ -69,7 +69,7 @@ p{margin:0 0 1em;text-wrap:pretty}
 .nav-links a:hover::after,.nav-links a.active::after{right:0}
 .nav-links a:hover{color:var(--ink)}
 .nav-links a.active{color:var(--ink)}
-.nav-cta{border:1px solid var(--ink);padding:.55em 1.2em !important;border-radius:1px;color:var(--ink) !important;transition:all .35s}
+.nav-cta{border:1px solid var(--ink);padding:.55em 1.2em !important;border-radius:1px;color:var(--ink) !important;transition:background-color .35s,color .35s,border-color .35s}
 .nav-cta:hover{background:var(--ink);color:var(--bg) !important}
 .nav-cta::after{display:none !important}
 .burger{display:none;background:none;border:0;cursor:pointer;flex-direction:column;gap:5px;
@@ -436,3 +436,21 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .about-collage img{width:100%;height:100%;object-fit:cover;border-radius:2px}
 .about-collage .ac-wide{grid-column:1/-1;aspect-ratio:16/9}
 .about-collage img:not(.ac-wide){aspect-ratio:3/4}
+
+/* ============ audit fixes (v5.6) ============ */
+/* anchor non finiscono sotto la nav fissa */
+[id]{scroll-margin-top:90px}
+/* tocco: reattività e niente flash blu su Android */
+html{-webkit-tap-highlight-color:transparent}
+a,button,input,textarea,label{touch-action:manipulation}
+/* burger: target 44px pieno */
+.burger{width:48px;height:48px}
+/* footer: link tappabili comodi */
+.f-nav a,.f-social a{padding:.25em 0;display:inline-block}
+/* modale: lo scroll non "buca" la pagina dietro */
+.modal{overscroll-behavior:contain}
+/* footer heading declassato da h4 a p: mantiene lo stile */
+.f-h{font-family:"Playfair Display",Georgia,serif;font-weight:500;font-size:1.05rem;margin:0 0 .9rem;color:var(--ink)}
+/* skip link: invisibile finché non riceve focus da tastiera */
+.skip-link{position:absolute;left:-9999px;top:0;z-index:2000;background:var(--espresso);color:#f5efe6;padding:.7em 1.2em;border-radius:2px}
+.skip-link:focus{left:12px;top:12px}

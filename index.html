@@ -12,9 +12,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap&subset=cyrillic,latin" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=55">
+<link rel="stylesheet" href="assets/css/style.css?v=56">
 </head>
 <body class="has-hero">
+<a class="skip-link" href="#main">К содержанию</a>
 <header class="nav" id="nav">
   <div class="nav-inner">
     <a class="brand" href="index.html" aria-label="Italiarredo — главная">
@@ -28,8 +29,8 @@
   </div>
 </header>
 
-<section class="hero">
-  <div class="hero-bg"><img fetchpriority="high" src="assets/img/longhi/hero.jpg" alt="Итальянская мебель в интерьере"></div>
+<section id="main" class="hero">
+  <div class="hero-bg"><img width="2000" height="1120" fetchpriority="high" src="assets/img/longhi/hero.jpg" alt="Итальянская мебель в интерьере"></div>
   <div class="hero-inner">
     <span class="eyebrow hero-eyebrow">Представительство итальянских мебельных фабрик</span>
     <h1>Итальянская мебель для вашего проекта</h1>
@@ -49,7 +50,7 @@
       <p class="lead">Italiarredo — официальное представительство итальянских производителей мебели и света в России. Мы помогаем профессионалам подобрать решения под проект, рассчитать заказ и защитить интересы клиента в работе с фабрикой — быстро и точно.</p>
       <div class="btn-row" style="margin-top:1.6rem"><a class="btn btn-ghost" href="uslugi.html">О компании и услугах</a></div>
     </div>
-    <div class="reveal"><img src="assets/img/_site/about.jpg" alt="Итальянская мебель" style="border-radius:2px" loading="lazy"></div>
+    <div class="reveal"><img width="1500" height="1050" src="assets/img/_site/about.jpg" alt="Итальянская мебель" style="border-radius:2px" loading="lazy"></div>
   </div>
   <div class="container">
     <div class="values">
@@ -129,7 +130,7 @@
 </section>
 
 <section class="band dark">
-  <div class="band-img"><img src="assets/img/_site/salone.jpg" alt="Salone del Mobile 2027, Милан" loading="lazy"></div>
+  <div class="band-img"><img width="1920" height="1080" src="assets/img/_site/salone.jpg" alt="Salone del Mobile 2027, Милан" loading="lazy"></div>
   <div class="band-text reveal">
     <span class="eyebrow">Salone del Mobile.Milano · 13–18 апреля 2027</span>
     <h2>До встречи в Милане</h2>
@@ -157,11 +158,11 @@
       <p>Прямое представительство ведущих итальянских мебельных фабрик в России. Работаем с архитекторами, дизайнерами и салонами мебели.</p>
     </div>
     <div class="f-col">
-      <h4>Навигация</h4>
+      <p class="f-h">Навигация</p>
       <nav class="f-nav"><a href="index.html">Главная</a><a href="fabriki.html">Фабрики</a><a href="uslugi.html">О компании</a><a href="novosti.html">Новости</a><a href="kontakty.html">Контакты</a></nav>
     </div>
     <div class="f-col">
-      <h4>Контакты</h4>
+      <p class="f-h">Контакты</p>
       <p>Москва, Садовая-Кудринская улица, 14–16</p>
       <p><a href="tel:+74952329790">+7 (495) 232-97-90</a></p>
       <p><a href="mailto:info@italiarredo.ru">info@italiarredo.ru</a></p>
@@ -184,10 +185,10 @@
     <button class="modal-close" value="cancel" aria-label="Закрыть">&times;</button>
     <h3>Скачать каталог</h3>
     <p class="modal-sub" id="catalogFor">Оставьте контакты — каталог откроется автоматически.</p>
-    <label>Имя<input name="name" required></label>
-    <label>Компания / студия<input name="company" required></label>
-    <label>Email<input type="email" name="email" required></label>
-    <label>Телефон<input name="phone" required></label>
+    <label>Имя<input name="name" autocomplete="name" required></label>
+    <label>Компания / студия<input name="company" autocomplete="organization" required></label>
+    <label>Email<input type="email" name="email" autocomplete="email" spellcheck="false" required></label>
+    <label>Телефон<input type="tel" name="phone" autocomplete="tel" inputmode="tel" required></label>
     <button class="btn btn-accent" id="catalogSubmit" value="default" type="submit">Получить каталог</button>
     <p class="modal-ok" id="catalogOk" hidden>Спасибо! Загрузка началась. Если файл не открылся — <a id="catalogDirect" href="#" target="_blank">нажмите здесь</a>.</p>
   </form>

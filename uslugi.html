@@ -12,9 +12,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap&subset=cyrillic,latin" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=55">
+<link rel="stylesheet" href="assets/css/style.css?v=56">
 </head>
 <body class="">
+<a class="skip-link" href="#main">К содержанию</a>
 <header class="nav" id="nav">
   <div class="nav-inner">
     <a class="brand" href="index.html" aria-label="Italiarredo — главная">
@@ -28,7 +29,7 @@
   </div>
 </header>
 
-<section class="section" style="padding-top:clamp(7rem,12vw,9rem)">
+<section id="main" class="section" style="padding-top:clamp(7rem,12vw,9rem)">
   <div class="container">
     <div class="sec-head reveal">
       <div><span class="eyebrow">Для профессионалов</span><h2>Что мы делаем</h2></div>
@@ -52,7 +53,7 @@
       <p class="lead">Наша задача — сделать работу с итальянскими фабриками простой и предсказуемой. Мы отвечаем быстро, ведём заказ точно и сопровождаем проект от подбора и расчёта до отгрузки с фабрики. По доставке и монтажу порекомендуем проверенных партнёров.</p>
     </div>
     <div class="reveal about-collage">
-      <img class="ac-wide" src="assets/img/_site/about.jpg" alt="Интерьер с итальянской мебелью" loading="lazy">
+      <img width="1500" height="1050" class="ac-wide" src="assets/img/_site/about.jpg" alt="Интерьер с итальянской мебелью" loading="lazy">
       <img src="assets/img/officina-luce/g01.jpg" alt="Освещение Officina Luce" loading="lazy">
       <img src="assets/img/artnova/g06.jpg" alt="Кресло Art Nova" loading="lazy">
     </div>
@@ -67,7 +68,7 @@
 </section>
 
 <section class="band dark">
-  <div class="band-img"><img src="assets/img/_site/salone.jpg" alt="Salone del Mobile 2027, Милан" loading="lazy"></div>
+  <div class="band-img"><img width="1920" height="1080" src="assets/img/_site/salone.jpg" alt="Salone del Mobile 2027, Милан" loading="lazy"></div>
   <div class="band-text reveal">
     <span class="eyebrow">Salone del Mobile.Milano · 13–18 апреля 2027</span>
     <h2>До встречи в Милане</h2>
@@ -82,11 +83,11 @@
       <p>Прямое представительство ведущих итальянских мебельных фабрик в России. Работаем с архитекторами, дизайнерами и салонами мебели.</p>
     </div>
     <div class="f-col">
-      <h4>Навигация</h4>
+      <p class="f-h">Навигация</p>
       <nav class="f-nav"><a href="index.html">Главная</a><a href="fabriki.html">Фабрики</a><a href="uslugi.html">О компании</a><a href="novosti.html">Новости</a><a href="kontakty.html">Контакты</a></nav>
     </div>
     <div class="f-col">
-      <h4>Контакты</h4>
+      <p class="f-h">Контакты</p>
       <p>Москва, Садовая-Кудринская улица, 14–16</p>
       <p><a href="tel:+74952329790">+7 (495) 232-97-90</a></p>
       <p><a href="mailto:info@italiarredo.ru">info@italiarredo.ru</a></p>
@@ -109,10 +110,10 @@
     <button class="modal-close" value="cancel" aria-label="Закрыть">&times;</button>
     <h3>Скачать каталог</h3>
     <p class="modal-sub" id="catalogFor">Оставьте контакты — каталог откроется автоматически.</p>
-    <label>Имя<input name="name" required></label>
-    <label>Компания / студия<input name="company" required></label>
-    <label>Email<input type="email" name="email" required></label>
-    <label>Телефон<input name="phone" required></label>
+    <label>Имя<input name="name" autocomplete="name" required></label>
+    <label>Компания / студия<input name="company" autocomplete="organization" required></label>
+    <label>Email<input type="email" name="email" autocomplete="email" spellcheck="false" required></label>
+    <label>Телефон<input type="tel" name="phone" autocomplete="tel" inputmode="tel" required></label>
     <button class="btn btn-accent" id="catalogSubmit" value="default" type="submit">Получить каталог</button>
     <p class="modal-ok" id="catalogOk" hidden>Спасибо! Загрузка началась. Если файл не открылся — <a id="catalogDirect" href="#" target="_blank">нажмите здесь</a>.</p>
   </form>
